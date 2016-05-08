@@ -1,7 +1,6 @@
-declare namespace jquery {
-  export var multiselect: any;
-}
-
-declare module 'jqueryMultiselect' {
-  export = jquery;
+interface JQuery {
+  multiselect: {
+    (options: any): JQuery;
+    //bar: <T>(input: T) => T
+  }
 }
